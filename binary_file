@@ -1,0 +1,10 @@
+def write_binary_file(filename):
+    # Data to be written in binary format
+    data = bytearray([0x41, 0x42, 0x43, 0x44, 0x45])
+
+    with open(filename, 'wb') as file:
+        file.write(data)
+
+if __name__ == "__main__":
+    write_binary_file("example.bin")
+    print("Binary file 'example.bin' has been created.")
