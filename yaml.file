@@ -1,0 +1,41 @@
+# Application Configuration
+
+application:
+  name: MyApp
+  version: 1.0.0
+  environment: production
+
+# Server Configuration
+
+server:
+  port: 8080
+  host: localhost
+
+# Database Configuration
+
+database:
+  type: postgres
+  host: localhost
+  port: 5432
+  username: user
+  password: pass
+  name: myapp_db
+
+# Logging Configuration
+
+logging:
+  level: info
+  file: /var/log/myapp.log
+
+# API Configuration
+
+api:
+  version: v1
+  base_path: /api
+
+# Security Configuration
+
+security:
+  enable_https: true
+  cert_file: /path/to/cert.pem
+  key_file: /path/to/key.pem
